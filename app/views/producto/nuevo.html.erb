@@ -1,0 +1,20 @@
+<h1>Nuevo Producto</h1>
+<%= form_for @objProducto, url:producto_crear_path do |form| %>
+
+    <%= form.label :Categoria %>
+    <%= form.text_field :categoria %>
+
+    <%= form.label :Nombre %>
+    <%= form.text_field :nombre %>
+
+    <%= form.label  :Precio %>
+    <%= form.text_field :precio %>
+
+    <%= form.label :"Precio de venta" %>
+    <%= form.text_field :precio_venta %>
+
+
+<%= form.submit "Crear producto" %>
+
+
+<% end %>
